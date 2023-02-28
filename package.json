@@ -1,0 +1,24 @@
+{
+  "name": "nosql-social",
+  "version": "1.0.0",
+  "description": "Module 18 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlihudson/nosql-social.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlihudson/nosql-social/issues"
+  },
+  "homepage": "https://github.com/carlihudson/nosql-social#readme",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "mongoose": "^7.0.0"
+  }
+}
