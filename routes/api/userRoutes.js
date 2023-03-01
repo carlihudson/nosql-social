@@ -7,3 +7,5 @@ const {
 
 // get all users or create a new user - /api/users
 router.route('/').get(getUsers).post(createUser);
+
+module.exports = router;
