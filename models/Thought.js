@@ -61,12 +61,12 @@ const thoughtSchema = new Schema(
     }
 );
 
-// virtual property (not stored in MongoDB) of a user's friend count
+// virtual property (not stored in MongoDB) of a thought's reaction count
 thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 })
 
-// create User model with schema
+// create Thought model with schema
 const Thought = model('thought', thoughtSchema);
 
 module.exports = Thought;
