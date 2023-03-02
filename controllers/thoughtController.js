@@ -88,7 +88,7 @@ module.exports = {
     // post a reaction to a thought
     addReaction (req, res) {
         Thought.findOneAndUpdate(
-            { _id: req.body.thoughtId },
+            { _id: req.params.thoughtId },
             { $addToSet: { reactions: req.body } },
             { runValidators: true, new: true }
         )
@@ -102,6 +102,24 @@ module.exports = {
                 return res.status(500).json(err)
             });
     },
+
+    // delete a reaction
+    deleteReaction(req, res) {
+        Thought.findOneAndUpdate(
+            { _id: req.params.thoughtId },
+            { $pull: { reactions: {  _id: req.params.reactionId } } },
+            { new: true }
+        )
+        .then((thought) => 
+            !thought
+                ? res.status(404).json({ message: "No thought with this ID!" })
+                : res.json(thought)
+            )
+            .catch((err) => {
+                console.log(err);
+                return res.status(500).json(err)
+            });
+    }
 }
 
 

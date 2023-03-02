@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 
+
 // schema to create user model
 const userSchema = new Schema(
     {
@@ -41,7 +42,7 @@ const userSchema = new Schema(
 // virtual property (not stored in MongoDB) of a user's friend count
 userSchema.virtual('friendcount').get(function () {
     return this.friends.length;
-})
+});
 
 // create User model with schema
 const User = model('user', userSchema);

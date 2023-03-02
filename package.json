@@ -19,6 +19,7 @@
   "homepage": "https://github.com/carlihudson/nosql-social#readme",
   "dependencies": {
     "express.js": "^1.0.0",
+    "moment": "^2.29.4",
     "mongoose": "^7.0.0"
   }
 }
