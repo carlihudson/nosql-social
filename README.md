@@ -24,7 +24,7 @@
   This application could be used for anyone looking to bulid a social networking app, whether it's for school, work, or for fun.
 
   ## Demonstration
-  [Click this link]() see a video demonstration of this application in action.
+  [Click this link](https://drive.google.com/file/d/1u6VxNsHwipInxIZvWKapnDZ-VTxyJk8Z/view) see a video demonstration of this application in action.
   
 
   ## License
